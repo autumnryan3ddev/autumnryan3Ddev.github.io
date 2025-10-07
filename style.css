@@ -1,3 +1,11 @@
+.hidden a {
+    color: white;
+}
+
+.hidden h1 {
+    color: white;
+}
+
 .gallery {
     height: 50vh;
 }
@@ -66,7 +74,7 @@ header {
     position: fixed; 
     top: 0; 
     z-index: 100; 
-    background-color: rgba(200,200,200,0.5);
+    background-color: rgba(100,100,100,0.5);
 }
 
 .dropdown {
@@ -132,10 +140,6 @@ header {
 .centered {
     width: 100%; 
     text-align: center;
-}
-
-.grey-bg {
-    background-color: rgba(200,200,200,0.5); 
 }
 
 body {
