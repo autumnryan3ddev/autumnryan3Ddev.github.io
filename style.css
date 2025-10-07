@@ -135,7 +135,7 @@ margin: 2%;
 }
 
 .grey-bg {
-    background-color: gray; 
+    background-color: rgba(200,200,200,0.5); 
 }
 
 body {
