@@ -104,12 +104,15 @@ header {
 }
 
 .img-card {
-    height: 100vh;
+    width: 100vw; 
+    max-width:100%;
+    aspect-ratio: 16 / 9;
     overflow: hidden; 
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    padding:0;
 }
 
 .fullscreen-img {
@@ -147,6 +150,45 @@ body {
     padding: 0; 
 }
 
+
+@media only screen and (max-width: 767px) {
+h1 {
+    margin: 0; 
+    font-size: 3em; 
+    padding: 2% 1% 1% 1%; 
+}
+
+h1 a {
+    color: black; 
+    text-decoration: none; 
+}
+
+nav {
+    padding: 5px; 
+    font-size: 3em; 
+    color: white; 
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px; 
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    text-decoration: none;
+    background-color: darkgray;
+}
+
+nav a:visited {
+    color: white; 
+    text-decoration: none; 
+}
+
+}
+
+@media only screen and (min-width: 767px) {
 h1 {
     margin: 0; 
     padding: 2% 1% 1% 1%; 
@@ -177,4 +219,6 @@ nav a:hover {
 nav a:visited {
     color: white; 
     text-decoration: none; 
+}
+
 }
