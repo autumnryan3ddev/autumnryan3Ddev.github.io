@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset=“utf-8”>
+  	<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  	<title>Autumn Ryan - Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="slideshow.css">
+    </head>
+    <body>
+        <header class="julius-sans-one-regular centered">
+            <h1><a href="index.html">Autumn Ryan | 3D Art</a></h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <div class="dropdown"><a href="projects.html">Game Work</a>
+                    <div class="dropdown-content">
+                        <a href="resilica.html">Re:Silica</a>
+                        <a href="postmortem.html">Postmortem</a>
+                    </div>
+                </div>
+				<a href="renders.html">Renders</a>
+				<a href="personal.html">Personal Work</a>
+				<a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <section class="hidden">
+                <h1><a href="">Autumn Ryan | 3D Art</a></h1>
+                <a href="">Home</a>
+                <a href="">Contact</a>
+			</section>
+			<h2>Renders</h2>
+			<p style="text-align: center">All objects modeled in Maya and rendered using Maya Arnold. Blue triangle texture sourced form <a href="https://www.architextures.org" target="_blank">architextures.org</a></p>
+			<div class="slideshow-container">
+			  <!-- Full-width images with number and caption text -->
+			  <div class="mySlides fade">
+					<img src="imgs/roomrender1.jpg" style="width:100%">
+			  </div>
+
+			  <div class="mySlides fade">
+					<img src="imgs/roomrender2.jpg" style="width:100%">
+			  </div>
+
+			  <div class="mySlides fade">
+					<img src="imgs/roomrender3.jpg" style="width:100%">
+			  </div>
+			  
+			  <div class="mySlides fade">
+					<img src="imgs/unsettlingdesk.jpg" style="width:100%">
+			  </div>
+
+			  <!-- Next and previous buttons -->
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+
+			<!-- The dots/circles -->
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span>
+			  <span class="dot" onclick="currentSlide(2)"></span>
+			  <span class="dot" onclick="currentSlide(3)"></span>
+			  <span class="dot" onclick="currentSlide(4)"></span>
+			</div>
+        </main>
+        <footer>
+        </footer>
+		<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  let dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			}
+			</script>
+    </body>
+</html>

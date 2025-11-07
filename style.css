@@ -1,4 +1,7 @@
-
+.sketchfab-embed-wrapper iframe {
+	width: 50vw; 
+}
+	
 .gallery {
     height: 50vh;
 }
@@ -13,22 +16,28 @@ iframe {
   font-weight: 400;
   font-style: normal;
 }
+.centered {
+	text-align: center; 
+}
 
 body {
   font-family: "Public Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  color: white;
 }
 
 
 h2 {
     font-family: "Julius Sans One", sans-serif;
-    margin: 2% 5% 2% 2%;
+    margin: 5% 2% 2% 2%;
+	color: white; 
+	text-align: center; 
 }
 
 h3 {
-    margin: 2%;
+    margin-top: 2%;
 }
 
 p {
@@ -46,8 +55,8 @@ margin: 2%;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 130px;
-  box-shadow: 
-  padding: 12px 16px;
+  padding: 6px;
+  text-align: left; 
 }
 
 .dropdown:hover .dropdown-content {
@@ -74,22 +83,19 @@ margin: 2%;
     padding:0;
 }
 
-.fullscreen-img {
+.index-img {
     width: 100vw; 
     position: absolute;
 }
 
 .card-label {
-    position: absolute;
-    font-size: 3em;
-    color: black;
-    padding: 10%; 
+    font-size: 1em;
     background-color: rgba(255, 255, 255, 0.5); 
     transition: background-color 0.3s ease-in-out, font-size 0.3s ease-in-out;
 }
 
 .card-label:hover {
-    font-size: 3.3em; 
+    font-size: 1.3em; 
     background-color: rgba(255, 255, 255, 0.5); 
 }
 
@@ -107,6 +113,7 @@ margin: 2%;
 body {
     margin: 0; 
     padding: 0; 
+	background-color: black;
 }
 
 
@@ -148,20 +155,20 @@ font-family: "Julius Sans One", sans-serif;
 padding:5px;
 }
 .hidden a {
-    color: white;
+    color: black;
     font-size: 24px; 
     padding:10px;
 }
 
 .hidden h1 a{
-    color: white;
+    color: black;
     font-size: 32px; 
 }
 header {
     position: fixed; 
     top: 0; 
     z-index: 100; 
-    background-color: rgba(175,175,175,1);
+    background-color: rgba(175,175,175,0.5);
     box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
 }
 
@@ -172,7 +179,7 @@ h1 {
 }
 
 h1 a {
-    color: black; 
+    color: white; 
     text-decoration: none; 
 }
 
@@ -235,27 +242,28 @@ hidden {
 display:none;
 }
 .hidden a {
-    color: white;
+    color: black;
 }
 
 .hidden h1 {
-    color: white;
+    color: black;
 }
 header {
     position: fixed; 
     top: 0; 
     z-index: 100; 
-    background-color: rgba(175,175,175,1);
+    background-color: rgba(175,175,175,0.5);
     box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
 }
 
 h1 {
     margin: 0; 
-    padding: 2% 1% 1% 1%; 
+    padding: 2% 1% 1% 1%;    
+
 }
 
 h1 a {
-    color: black; 
+    color: white; 
     text-decoration: none; 
 }
 
