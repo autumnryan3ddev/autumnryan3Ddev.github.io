@@ -1,0 +1,53 @@
+.sketchfab-container1 {
+	display: flex; 
+	background-color: #7E846B;
+	padding: 1%;  
+	justify-content: center; 
+	color: #EAFDF8;
+}
+
+.sketchfab-container2 {
+	display: flex; 
+	background-color: #594E36;
+	padding: 1%;  
+	justify-content: center; 
+	color: #EAFDF8;
+}
+
+.sketchfab-halves {
+	
+	width: 30%; 
+	flex: none; 
+}
+
+.sketchfab-quarters {
+	padding: 1%; 
+	width: 45%; 
+}
+
+.explanation {
+	padding: 2%;
+	width: 40%;
+}
+
+.shrinker {
+	width: 70%; 
+	display: inline-block;
+}
+
+a {
+	color: white;
+}
+
+a:visited {
+	color: white; 
+}
+
+a.explanation {
+	background-color: #7E846B;
+	transition: background-color 0.3s ease-in-out;
+}
+
+a.explanation:hover {
+	background-color: #594E36;
+}
