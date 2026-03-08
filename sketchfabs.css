@@ -1,17 +1,17 @@
 .sketchfab-container1 {
 	display: flex; 
-	background-color: #7E846B;
+	background-color: #EAD8C0;
 	padding: 1%;  
 	justify-content: center; 
-	color: #EAFDF8;
+	color: #131010;
 }
 
 .sketchfab-container2 {
 	display: flex; 
-	background-color: #594E36;
+	background-color: #D1BB9E;
 	padding: 1%;  
 	justify-content: center; 
-	color: #EAFDF8;
+	color: #131010;
 }
 
 .sketchfab-halves {
@@ -44,10 +44,10 @@ a:visited {
 }
 
 a.explanation {
-	background-color: #7E846B;
+	//background-color: #EAD8C0;
 	transition: background-color 0.3s ease-in-out;
 }
 
 a.explanation:hover {
-	background-color: #594E36;
+	background-color: #D1BB9E;
 }
