@@ -6,6 +6,15 @@
     height: 50vh;
 }
 
+footer a {
+	background-color: gray; 
+	padding: 10px; 
+	margin: 20px; 
+}
+footer a:visited {
+	color: white;
+}
+
 iframe {
     margin: 2%;
 }
@@ -28,7 +37,8 @@ body {
   color: #2F2504;
   margin: 0; 
   padding: 0; 
-  background-color: #FFF2E1;
+  //background-color: #FFF2E1;
+  background-color: white; 
   text-align: center; 
 }
 
@@ -47,6 +57,7 @@ h2 {
 
 h3 {
     margin-top: 2%;
+	color:black;
 }
 
 p {
@@ -62,7 +73,8 @@ margin: 2%;
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #FFF2E1;
+  //background-color: #FFF2E1;
+  background-color: gray; 
   min-width: 130px;
   padding: 6px;
   text-align: left; 
@@ -99,13 +111,15 @@ margin: 2%;
 
 .card-label {
     font-size: 1em;
-    background-color: rgba(255, 255, 255, 0.5); 
+    //background-color: rgba(255, 255, 255, 0.5); 
+	background-color: gray;
     transition: background-color 0.3s ease-in-out, font-size 0.3s ease-in-out;
 }
 
 .card-label:hover {
     font-size: 1.3em; 
-    background-color: rgba(255, 255, 255, 0.5); 
+    //background-color: rgba(255, 255, 255, 0.5); 
+	background-color: gray;
 }
 
 .julius-sans-one-regular {
@@ -257,7 +271,8 @@ header {
     position: fixed; 
     top: 0; 
     z-index: 100; 
-    background-color: #D1BB9E;
+    //background-color: #D1BB9E;
+	background-color: gray;
     box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
 }
 
@@ -289,7 +304,8 @@ nav a {
 
 nav a:hover {
     text-decoration: none;
-    background-color: #A79277;
+    //background-color: #A79277;
+	background-color: lightgray;
 }
 
 nav a:visited {

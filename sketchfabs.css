@@ -1,6 +1,7 @@
 .sketchfab-container1 {
 	display: flex; 
-	background-color: #EAD8C0;
+	//background-color: #EAD8C0;
+	background-color: lightgray;
 	padding: 1%;  
 	justify-content: center; 
 	color: #131010;
@@ -8,7 +9,8 @@
 
 .sketchfab-container2 {
 	display: flex; 
-	background-color: #D1BB9E;
+	//background-color: #D1BB9E;
+	background-color: gainsboro;
 	padding: 1%;  
 	justify-content: center; 
 	color: #131010;
@@ -46,8 +48,14 @@ a:visited {
 a.explanation {
 	//background-color: #EAD8C0;
 	transition: background-color 0.3s ease-in-out;
+	color: black;
 }
 
 a.explanation:hover {
-	background-color: #D1BB9E;
+	//background-color: #D1BB9E;
+	background-color: gainsboro;
+}
+
+img {
+	width: 100%; 
 }
