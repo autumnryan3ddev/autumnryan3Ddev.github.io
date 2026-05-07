@@ -1,34 +1,3 @@
-.sketchfab-embed-wrapper iframe {
-	width: 50vw; 
-}
-	
-.gallery {
-    height: 50vh;
-}
-
-footer a {
-	background-color: gray; 
-	padding: 10px; 
-	margin: 20px; 
-}
-footer a:visited {
-	color: white;
-}
-
-iframe {
-    margin: 2%;
-}
-
-.public-sans-font {
-  font-family: "Public Sans", sans-serif;
-  //font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.centered {
-	text-align: center; 
-}
-
 body {
   font-family: "Public Sans", sans-serif;
   font-optical-sizing: auto;
@@ -37,9 +6,14 @@ body {
   color: #2F2504;
   margin: 0; 
   padding: 0; 
-  //background-color: #FFF2E1;
   background-color: white; 
   text-align: center; 
+}
+
+header {
+	text-align: center; 
+	font-family: "Julius Sans One", sans-serif;
+	width: 100%; 
 }
 
 ul {
@@ -64,109 +38,44 @@ p {
 margin: 2%;
 }
 
-
-.dropdown {
-  position: relative;
-  display: inline-block;
+footer a {
+	background-color: gray; 
+	padding: 10px; 
+	margin: 20px; 
+}
+footer a:visited {
+	color: white;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  //background-color: #FFF2E1;
-  background-color: gray; 
-  min-width: 130px;
-  padding: 6px;
-  text-align: left; 
+.imgRow {
+	display: flex; 
+	flex-wrap: wrap; 
+	padding: 0 4px; 
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.imgColumn {
+	flex: 30%; 
+	display:flex;
+	flex-direction:column;
+	padding: 0 4px;
 }
 
-.dropdown:hover .dropdown-content a {
-  display: block;
-  color: white;
-  width: 100%;
-  padding: 10px; 
-  margin: 10px;
+.imgColumn img {
+	margin-top: 8px; 
+	vertical-align: middle;
+	//display:box;
 }
 
-.img-card {
-    width: 100vw; 
-    max-width:100%;
-    aspect-ratio: 16 / 9;
-    overflow: hidden; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding:0;
+.imgWithCaption {
+	padding-bottom: 16px; 
 }
 
-.index-img {
-    width: 100vw; 
-    position: absolute;
+iframe {
+    margin: 2%;
 }
-
-.card-label {
-    font-size: 1em;
-    //background-color: rgba(255, 255, 255, 0.5); 
-	background-color: gray;
-    transition: background-color 0.3s ease-in-out, font-size 0.3s ease-in-out;
-}
-
-.card-label:hover {
-    font-size: 1.3em; 
-    //background-color: rgba(255, 255, 255, 0.5); 
-	background-color: gray;
-}
-
-.julius-sans-one-regular {
-    font-family: "Julius Sans One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.centered {
-    width: 100%; 
-    text-align: center;
-}
-
 
 @media only screen and (max-width: 767px) {
-.proj {
-    overflow: hidden; 
-    width: 100vw; 
-    max-width:100%;
-    text-align: center;
-    margin: 0; 
-    padding: 0;
-}
 
-.proj-prev {
-    display: block;
-    width: 100vw;
-    max-width:100%;
-    padding: 0; 
-    color:black; 
-    text-decoration: none;
-    background-color: white; 
-    transition: background-color 0.3s ease-in-out;
-}
-
-.proj-prev:hover {
-    background-color: lightgray; 
-}
-
-.proj img {
-    //width: 100vw; 
-    //max-width:100%;
-    max-height: 50vh;
-    overflow:hidden;
-    padding: 0; 
-    margin: 0; 
-}
 .hidden {
 font-family: "Julius Sans One", sans-serif;
 padding:5px;
@@ -228,35 +137,6 @@ nav a:visited {
 }
 
 @media only screen and (min-width: 767px) {
-.proj {
-    display: inline-flex;
-    overflow: hidden; 
-    width: 100vw; 
-    justify-content: center;
-    margin: 0; 
-    padding: 0;
-}
-
-.proj-prev {
-    display: block;
-    width: 22vw;
-    padding: 1vw; 
-    color:black; 
-    text-decoration: none;
-    background-color: white; 
-    transition: background-color 0.3s ease-in-out;
-}
-
-.proj-prev:hover {
-    background-color: lightgray; 
-}
-
-.proj img {
-    width: 22vw; 
-    padding: 0; 
-    margin: 0; 
-}
-
 hidden {
 display:none;
 }
